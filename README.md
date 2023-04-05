@@ -8,4 +8,4 @@ potential additions:
 - background option when download
 - fill feature 
 - image paste 
-- Discord Bot that sends image to server immediatley
+- Discord Bot that sends image to server immediatley (Version 2 or 3)
