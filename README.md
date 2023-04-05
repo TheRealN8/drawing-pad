@@ -7,3 +7,4 @@ potential additions:
 - Zoom in and out feature
 - background option when download
 - fill feature 
+- image paste 
