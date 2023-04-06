@@ -5,6 +5,7 @@ https://therealn8.github.io/drawing-pad/
 
 potential additions:
 - Zoom in and out feature
+- Dot on screen to show where stroke will be placed
 - Eraser tool
 - background option when download (displays colored background, currently transparent background)
 - fill feature 
