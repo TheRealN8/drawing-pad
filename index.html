@@ -18,12 +18,16 @@
       <div class="clr" data-clr="blue"></div>
       <div class="clr" data-clr="purple"></div>
       <div class="clr" data-clr="#fff"></div>
-      <button class="clear">Clear</button>
-      <button class="save">Save</button>
-      <input type="color" value="#FFFFFF" id="favcolor">
-      <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="10" oninput="ageOutputId.value = ageInputId.value">
+      <button id="eraserBtn" title="Eraser">Eraser</button>
+      <button class="clear" title="Clear">Clear</button>
+      <button class="save" title="Save">Save</button>
+      <input type="color" value="#FFFFFF" id="favcolor" title="Change Background Colour">
+      <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="20" oninput="ageOutputId.value = ageInputId.value">
       <output id="ageOutputId">5</output>
+      <button class="zoomOut-button" title="Zoom In">➖</button>
+      <button class="zoomIn-button" title="Zoom Out">➕</button>
       <div class="emoji">🎨</div>
+      <div class="version">V1.1</div>
     </div>
 
   </body>
