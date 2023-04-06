@@ -1,5 +1,5 @@
 # drawing-pad
-drawing pad version 1.1, I will be revising this project
+drawing pad version 1.1
 
 https://therealn8.github.io/drawing-pad/
 
