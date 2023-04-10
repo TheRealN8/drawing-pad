@@ -92,6 +92,10 @@ button{
   background-color: #BE6423  ;
 }
 
+.clear{
+  background-color: #F32013;
+}
+
 .clear:hover{
   opacity: 80%;
 }
@@ -153,6 +157,24 @@ input[type="color"]:hover{
 #canvas {
   transform: scale(1); /* zoom in by a factor of 2 */
 }
+
+.canvas-container {
+  /*cursor: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 10 10" width="10" height="10"><circle cx="5" cy="5" r="4" fill="black" /></svg>') 5 5, auto; */
+
+  cursor: crosshair;
+
+
+}
+
+#text-tool{
+  background-color: purple;
+}
+
+#text-tool:hover{
+  opacity: 80%;
+}
+
 
 .version{
 

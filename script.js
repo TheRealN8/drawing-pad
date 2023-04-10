@@ -49,9 +49,11 @@ function toggleEraser() {
   eraserMode = !eraserMode;
   if (eraserMode) {
     // set stroke color to canvas background color for eraser mode
+    canvas.style.cursor = 'url(images/cursor.cur), auto';
     ctx.strokeStyle = body.style.backgroundColor;
   } else {
     // set stroke color to selected color
+    canvas.style.cursor = 'crosshair';
     ctx.strokeStyle = theColor;
   }
 }
@@ -158,4 +160,32 @@ canvas.addEventListener("wheel", (event) => {
   }
   canvas.style.transform = `scale(${scale})`;
   canvas.style.transformOrigin = `${event.offsetX}px ${event.offsetY}px`;
+});
+
+
+
+
+const textToolButton = document.getElementById('text-tool');
+
+textToolButton.addEventListener('click', function() {
+  // Enable the text tool
+});
+
+let isTextToolActive = false;
+
+textToolButton.addEventListener('click', function() {
+  canvas.style.cursor = 'text';
+  isTextToolActive = true;
+
+  ctx.font = '50px Arial';
+  ctx.fillStyle = '#000';
+});
+
+canvas.addEventListener('click', function(event) {
+  if (isTextToolActive) {
+    const text = prompt('Enter text:');
+    ctx.fillText(text, event.clientX, event.clientY);
+    isTextToolActive = false;
+    canvas.style.cursor = 'crosshair';
+  }
 });

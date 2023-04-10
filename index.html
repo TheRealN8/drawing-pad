@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas" class="canvas-container" height="1920" width="1080"></canvas>
     <div class="nav">
       <div class="clr" data-clr="#000"></div>
       <div class="clr" data-clr="red"></div>
@@ -22,12 +22,15 @@
       <button class="clear" title="Clear">Clear</button>
       <button class="save" title="Save">Save</button>
       <input type="color" value="#FFFFFF" id="favcolor" title="Change Background Colour">
-      <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="20" oninput="ageOutputId.value = ageInputId.value">
+      <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="75" oninput="ageOutputId.value = ageInputId.value">
       <output id="ageOutputId">5</output>
       <button class="zoomOut-button" title="Zoom In">➖</button>
       <button class="zoomIn-button" title="Zoom Out">➕</button>
+
+      <button id="text-tool">Text</button>
+
       <div class="emoji">🎨</div>
-      <div class="version">V1.1</div>
+      <div class="version">V1.2</div>
     </div>
 
   </body>
